@@ -174,7 +174,7 @@
                 </div>
 
                 <!-- Módulo 2 -->
-                <div class="w3-third">
+                <div class="w3-third w3-margin-bottom">
                     <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
                         <li class="w3-cyan w3-xlarge w3-padding-32">2º Módulo</li>
                         <li class="w3-padding-16">Inglês Instrumental</li>
@@ -406,7 +406,7 @@
         function mostrarSlide(n){//Navega entre os Docentes
             let slidesDocentes = document.getElementsByClassName('slides')
             if (n >= slidesDocentes.length){slideIndex = 0}
-            if (n < 0){slideIndex = slidesDocentes.length}
+            if (n < 0){slideIndex = slidesDocentes.length - 1}
 
             for (let i = 0; i < slidesDocentes.length; i++){
                 slidesDocentes[i].style.display = 'none'
